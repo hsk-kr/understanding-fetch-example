@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Understanding Fetch Cache</title>
+  </head>
+  <style>
+    div {
+      padding: 8px;
+      display: flex;
+      column-gap: 8px;
+    }
+  </style>
+  <body>
+    <div>
+      <button id="cache-control-on">cache-control on</button>
+      <button id="cache-control-off">cache-control off</button>
+    </div>
+    <hr />
+    <div>
+      <button id="default-btn">default</button><label>Result:</label
+      ><span id="default-rst"></span>
+    </div>
+    <hr />
+    <div>
+      <button id="force-cache-btn">force-cache</button><label>Result:</label
+      ><span id="force-cache-rst"></span>
+    </div>
+    <hr />
+    <div>
+      <button id="only-if-cached-btn">only-if-cached</button
+      ><label>Result:</label><span id="only-if-cached-rst"></span>
+    </div>
+    <hr />
+    <div>
+      <button id="no-store-btn">no-store</button><label>Result:</label
+      ><span id="no-store-rst"></span>
+    </div>
+    <hr />
+    <div>
+      <button id="reload-btn">reload</button><label>Result:</label
+      ><span id="reload-rst"></span>
+    </div>
+    <hr />
+    <script src="./api.js" type="module"></script>
+  </body>
+</html>
